@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="670.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane prefHeight="400.0" prefWidth="600.0" stylesheets="@../application.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <AnchorPane prefHeight="28.0" prefWidth="600.0" styleClass="header" stylesheets="@../application.css" BorderPane.alignment="CENTER">
+               <children>
+                  <Button layoutX="548.0" layoutY="2.0" mnemonicParsing="false" styleClass="close" stylesheets="@../application.css" AnchorPane.bottomAnchor="2.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
+                     <graphic>
+                        <FontAwesomeIcon glyphName="CLOSE" />
+                     </graphic>
+                  </Button>
+                  <FontAwesomeIcon glyphName="SHOPPING_CART" layoutX="8.0" layoutY="19.0" />
+                  <Button layoutX="545.0" layoutY="2.0" mnemonicParsing="false" styleClass="minus" stylesheets="@../application.css" AnchorPane.bottomAnchor="2.0" AnchorPane.rightAnchor="29.0" AnchorPane.topAnchor="2.0">
+                     <graphic>
+                        <FontAwesomeIcon glyphName="MINUS" />
+                     </graphic>
+                  </Button>
+                  <Label layoutX="24.0" layoutY="6.0" text="| Khách hàng" />
+               </children>
+            </AnchorPane>
+         </top>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <BorderPane layoutX="216.0" layoutY="74.0" prefHeight="372.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <top>
+                        <AnchorPane prefHeight="35.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <ToolBar layoutY="1.0" prefHeight="36.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <items>
+                                  <Button mnemonicParsing="false" text="Xem" />
+                                    <Button mnemonicParsing="false" text="Thêm" />
+                                    <Button mnemonicParsing="false" text="Điều chỉnh" />
+                                    <Button mnemonicParsing="false" text="Xóa" />
+                                    <Button mnemonicParsing="false" text="Nhập từ Excel" />
+                                    <Button mnemonicParsing="false" text="Xuất từ Excel" />
+                                    <Button mnemonicParsing="false" text="In danh sách" />
+                                    <Button mnemonicParsing="false" text="Chi tiết bán hàng" />
+                                </items>
+                              </ToolBar>
+                           </children>
+                        </AnchorPane>
+                     </top>
+                     <center>
+                        <AnchorPane minHeight="-Infinity" prefHeight="566.0" prefWidth="860.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <AnchorPane layoutX="-3.0" layoutY="31.0" prefHeight="497.0" prefWidth="856.0" />
+                              <BorderPane layoutY="6.0" prefHeight="601.0" prefWidth="900.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="6.0">
+                                 <center>
+                                    <AnchorPane prefHeight="575.0" prefWidth="900.0" BorderPane.alignment="CENTER">
+                                       <children>
+                                          <TableView layoutY="1.0" prefHeight="584.0" prefWidth="900.0" tableMenuButtonVisible="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <columns>
+                                              <TableColumn prefWidth="47.0" />
+                                              <TableColumn prefWidth="90.0" text="Nhóm" />
+                                                <TableColumn prefWidth="131.0" text="Mã Khách Hàng" />
+                                                <TableColumn prefWidth="113.0" text="Tên Khách Hàng" />
+                                                <TableColumn prefWidth="104.0" text="Điện Thoại" />
+                                                <TableColumn prefWidth="152.0" text="Địa Chỉ" />
+                                                <TableColumn prefWidth="84.0" text="Ghi Chú" />
+                                                <TableColumn prefWidth="178.0" text="Công Nợ Hiện Tại" />
+                                            </columns>
+                                          </TableView>
+                                       </children>
+                                    </AnchorPane>
+                                 </center>
+                                 <top>
+                                    <Label text="DANH SÁCH KHÁCH HÀNG" BorderPane.alignment="CENTER" />
+                                 </top>
+                                 <bottom>
+                                    <AnchorPane prefHeight="40.0" prefWidth="900.0" BorderPane.alignment="CENTER">
+                                       <children>
+                                          <TextField layoutX="269.0" layoutY="2.0" prefHeight="10.0" prefWidth="113.0" AnchorPane.bottomAnchor="7.0" AnchorPane.topAnchor="8.0" />
+                                          <TextField layoutX="722.0" layoutY="8.0" prefHeight="10.0" prefWidth="178.0" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="722.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="8.0" />
+                                       </children>
+                                    </AnchorPane>
+                                 </bottom>
+                              </BorderPane>
+                           </children>
+                        </AnchorPane>
+                     </center>
+                  </BorderPane>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
